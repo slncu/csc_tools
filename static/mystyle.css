@@ -21,81 +21,86 @@ body {
     position: relative;
     width: 75%;
     height: 80%;
-}
-
-.top_img img{  
-    top: 0;
-    bottom: 25%;
-    left: 30%;
-    right: 30%;
-    margin: auto;
-    position: absolute;
+    left: 25%;
+    top: 10%;
 }
 
 .input_path {
-    border: 1px solid #707070;
-    width: 80%;
-    height: 10%;
-    position: absolute;
-    left: 10%;
-    bottom: 30%;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 10%;
+    margin: auto;
 }
 
 .dir_input_message {
-    position: static;
-    width: 80%;
-    height: 10%;
+    position: absolute;
+    border: 1px solid #707070;
+    width: 60%;
+    height: 50px;
+    bottom: 30%;
+    left:10%;
 }
 
 .dir_input_message p {
-    position: absolute;
-    left: 4%;
-    bottom: 0%;
+    position: relative;
+    width: 80%;
     color: #707070;
     font-size: 18px;
-}
-
-.form {
-    display: flex;
-    position: absolute;
-    top: 72%;
-    left: 25%;
-    padding: 10px;
-    
+    top: 10px;
+    left: 20px;
 }
 
 .form_folder {
-    margin: 10px;
-    left: 0;
+    right: 0;
+    bottom: 30%;
+    right: 10%;
+    position: absolute;
+    margin: auto;
+    margin-left: 10px;
 }
+
+.path-message-btn {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.form_enter {
+    text-align: center;
+}
+
+
+
 .btn_dir {
     font-size     : 18pt;        /* 文字サイズ */
     text-align    : center;      /* 文字位置   */
     cursor        : pointer;     /* カーソル   */
     padding       : 12px 12px;   /* 余白       */
-    background    : #383c53;     /* 背景色     */
+    background    : #167CB2;     /* 背景色     */
     color         : #ffffff;     /* 文字色     */
     line-height   : 1em;         /* 1行の高さ  */
     transition    : .3s;         /* なめらか変化 */
     box-shadow    : 2px 2px 4px #666666;  /* 影の設定 */
-    border        : 2px solid #383c53;    /* 枠の指定 */
+    border        : 2px solid #167CB2;    /* 枠の指定 */
 }
 
 
-
-.form_enter {
-    margin: 10px;
-    left: 0;
-}
 .btn_execution {
     font-size     : 18pt;        /* 文字サイズ */
     text-align    : center;      /* 文字位置   */
     cursor        : pointer;     /* カーソル   */
-    padding       : 12px 12px;   /* 余白       */
-    background    : #383c53;     /* 背景色     */
+    padding       : 10px 150px 10px;   /* 余白       */
+    background    : #167CB2;     /* 背景色     */
     color         : #ffffff;     /* 文字色     */
     line-height   : 1em;         /* 1行の高さ  */
     transition    : .3s;         /* なめらか変化 */
     box-shadow    : 2px 2px 4px #666666;  /* 影の設定 */
-    border        : 2px solid #383c53;    /* 枠の指定 */
+    border        : 2px solid #167CB2;    /* 枠の指定 */
 }

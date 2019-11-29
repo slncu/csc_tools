@@ -4,35 +4,33 @@
 {% block content %}
 
 <div class="inner">
-  <!-- Content here -->
   <div class="top_img"><img src="static/csc.png" alt="csc_tools"></div>
 
-  <div class="input_path">
-    <div class="dir_input_message">
-      {% if path %}
-      <p>{{ path }}</p>
-      {% else %}
-      <p>フォルダを選択してください</p>
-      {% endif %}
-    </div>
-  </div>
 
-  <div class="form">
+  <div class="path-message-btn">
+    <div class="input_path">
+      <div class="dir_input_message">
+        {% if path %}
+        <p>{{ path }}</p>
+        {% else %}
+        <p>フォルダを選択してください</p>
+        {% endif %}
+      </div>
+    </div>
+
     <div class="form_folder">
       <form action="/dir_folder" method="post" name="reset" class="dir_form">
-        <button type="submit" name="reset" class="btn_dir">　フォルダ指定　</button>
-      </form>
-    </div>
-
-    <div class="form_enter">
-      <form action="/execution" method="post" name="reset" class="execution">
-        <button type="submit" name="reset" class="btn_execution">　　　実行　　　</button>
+        <button type="submit" name="reset" class="btn_dir">フォルダ指定</button>
       </form>
     </div>
   </div>
 
 
-
+  <div class="form_enter">
+    <form action="/execution" method="post" name="reset" class="execution">
+      <button type="submit" name="reset" class="btn_execution">実行</button>
+    </form>
+  </div>
 </div>
 
 
