@@ -1,11 +1,7 @@
-{% extends 'base.html' %}
-
-
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 
 <div class="inner">
-  <div class="top_img"><img src="static/csc.png" alt="csc_tools"></div>
-
+  <div class="top_img"><img src="static/csc.png" alt="csc_tools" /></div>
 
   <div class="path-message-btn">
     <div class="input_path">
@@ -18,20 +14,22 @@
       </div>
     </div>
 
-    <div class="form_folder">
-      <form action="/dir_folder" method="post" name="reset" class="dir_form">
-        <button type="submit" name="reset" class="btn_dir">フォルダ指定</button>
-      </form>
+    <div class="form_wrapper">
+      <div class="form_folder">
+        <form action="/dir_folder" method="post" name="reset" class="dir_form">
+          <button type="submit" name="reset" class="btn_dir">
+            フォルダ指定
+          </button>
+        </form>
+      </div>
+
+      <div class="form_enter">
+        <form action="/execution" method="post" name="reset" class="execution">
+          <button type="submit" name="reset" class="btn_execution">実行</button>
+        </form>
+      </div>
     </div>
   </div>
-
-
-  <div class="form_enter">
-    <form action="/execution" method="post" name="reset" class="execution">
-      <button type="submit" name="reset" class="btn_execution">実行</button>
-    </form>
-  </div>
 </div>
-
 
 {% endblock %}
